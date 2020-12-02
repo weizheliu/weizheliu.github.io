@@ -67,6 +67,41 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+          <tr onmouseout="font_stop()" onmouseover="font_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/pre2.gif' width="180" height="160">
+              </div>
+              <script type="text/javascript">
+                function font_start() {
+                  document.getElementById('font_image').style.opacity = "1";
+                }
+
+                function font_stop() {
+                  document.getElementById('font_image').style.opacity = "0";
+                }
+                font_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2012.00452.pdf">
+                <papertitle>Counting People by Estimating People Flows</papertitle>
+              </a>
+              <br>
+        <strong>Weizhe Liu</strong>, Mathieu Salzmann, Pascal Fua
+              <br>
+              <em>arXiv, extension work of our ECCV 2020 paper</em>
+              <br>
+              <a href="https://arxiv.org/pdf/2012.00452.pdf">pdf</a> /
+              <a href="https://www.youtube.com/watch?v=dck3HVMLtfY">video</a> /
+              <a href="https://github.com/weizheliu/People-Flows">code</a> 
+              <p></p>
+              <p> In this paper, we advocate estimating people flows across image locations between consecutive images and inferring the people densities from these flows instead of directly regressing them. This enables us to impose much stronger constraints encoding the conservation of the number of people. As a result, it significantly boosts performance without requiring a more complex architecture. Furthermore, it allows us to exploit the correlation between people flow and optical flow to further improve the results. We also show that leveraging people conservation constraints in both a spatial and temporal manner makes it possible to train a deep crowd counting model in an active learning setting with much fewer annotations. This significantly reduces the annotation cost while still leading to similar performance to the full supervision case. </p>
+            </td>
+          </tr>
+
 		
           <tr onmouseout="font_stop()" onmouseover="font_start()">
                  <td style="padding:20px;width:25%;vertical-align:middle">
@@ -98,6 +133,7 @@
                    <p>In this paper, we investigate the effectiveness of existing attack strategies on crowd-counting networks, and introduce a simple yet effective pixelwise detection mechanism. It builds on the intuition that, when attacking a multitask network, in our case estimating crowd density and scene depth, both outputs will be perturbed, and thus the second one can be used for detection purposes. We will demonstrate that this significantly outperforms heuristic and uncertainty-based strategies.</p>
                  </td>
                </tr>
+
         </table>
 
 		
