@@ -52,7 +52,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research Interests</heading>
               <p>
-              My research interests lie in the field of Computer Vision, Machine Learning and Robotics. My main focus is on developing algorithms to crowd analysis problem, including counting, localization and motion estimation. Recently, I also work on semantic segmentation, domain adaptation and learning with less supervision.
+              My research interests lie in the field of Computer Vision, Machine Learning and Robotics. My main focus is on developing algorithms to crowd analysis problem, including counting, localization and motion estimation. Recently, I also work on semantic segmentation, domain adaptation, action recognition and learning with less supervision.
               </p>
             </td>
           </tr>
@@ -68,8 +68,84 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="pre4_stop()" onmouseover="pre4_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class='hidden' id='pre4'><img src='images/pre4.gif' width="180" height="160"></div>
+                <div id='pre4_still'>
+                    <a href='images/pre4.gif' width="180" height="160" ><img src='images/pre4_still.jpg' width="180" height="160"></a>
+              </div>
+                <script type="text/javascript">
+                function pre4_start() {
+                  document.getElementById('pre4').style.display = 'inline';
+                  document.getElementById('pre4_still').style.display = 'none';
+                }
+
+                function pre4_stop() {
+                  document.getElementById('pre4').style.display = 'none';
+                  document.getElementById('pre4_still').style.display = 'inline';
+                }
+                pre4_stop()
+              </script>
+            </td>
+                 <td style="padding:20px;width:75%;vertical-align:middle">
+                   <a href="https://arxiv.org/pdf/2104.11056.pdf">
+                     <papertitle>Domain Adaptation for Semantic Segmentation via Patch-Wise Contrastive Learning</papertitle>
+                   </a>
+                   <br>
+             <strong>Weizhe Liu</strong>, David Ferstl, Samuel Schulter, Lukas Zebedin, Pascal Fua, Christian Leistner
+                   <br>
+                   <em>arXiv</em>
+                   <br>
+                   <a href="https://arxiv.org/pdf/2104.11056.pdf">pdf</a>
+                   <p></p>
+                   <p> We introduce a novel approach to unsupervised and semi-supervised domain adaptation for semantic segmentation. Unlike many earlier methods that rely on adversarial learning for feature alignment, we leverage contrastive learning to bridge the domain gap by aligning the features of structurally similar label patches across domains. As a result, the networks are easier to train and deliver better performance. Our approach consistently outperforms state-of-the-art unsupervised and semi-supervised methods on two challenging domain adaptive segmentation tasks, particularly with a small number of target domain annotations. It can also be naturally extended to weakly-supervised domain adaptation, where only a minor drop in accuracy can save up to 75% of annotation cost.</p>
+                 </td>
+               </tr>
+
+
+
+
+          <tr onmouseout="pre3_stop()" onmouseover="pre3_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class='hidden' id='pre3'><img src='images/pre3.gif' width="180" height="160"></div>
+                <div id='pre3_still'>
+                    <a href='images/pre3.gif' width="180" height="160" ><img src='images/pre3_still.jpg' width="180" height="160"></a>
+              </div>
+                <script type="text/javascript">
+                function pre3_start() {
+                  document.getElementById('pre3').style.display = 'inline';
+                  document.getElementById('pre3_still').style.display = 'none';
+                }
+
+                function pre3_stop() {
+                  document.getElementById('pre3').style.display = 'none';
+                  document.getElementById('pre3_still').style.display = 'inline';
+                }
+                pre3_stop()
+              </script>
+            </td>
+                 <td style="padding:20px;width:75%;vertical-align:middle">
+                   <a href="https://arxiv.org/pdf/2103.16291.pdf">
+                     <papertitle>Leveraging Self-Supervision for Cross-Domain Crowd Counting</papertitle>
+                   </a>
+                   <br>
+             <strong>Weizhe Liu</strong>, Nikita Durasov, Pascal Fua
+                   <br>
+                   <em>arXiv</em>
+                   <br>
+                   <a href="https://arxiv.org/pdf/2103.16291.pdf">pdf</a>
+                   <p></p>
+                   <p> In this paper, we train with both synthetic images, along with their associated labels, and unlabeled real images. To this end, we force our network to learn perspective-aware features by training it to recognize upside-down real images from regular ones and incorporate into it the ability to predict its own uncertainty so that it can generate useful pseudo labels for fine-tuning purposes. This yields an algorithm that consistently outperforms state-of-the-art cross-domain crowd counting ones without any extra computation at inference time.</p>
+                 </td>
+               </tr>
+
+
+
+
+
 
           <tr onmouseout="pre2_stop()" onmouseover="pre2_start()">
+
             <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class='hidden' id='pre2'><img src='images/pre2.gif' width="180" height="160"></div>
                 <div id='pre2_still'>
@@ -145,7 +221,7 @@
 		<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
-              <heading>Publications</heading>
+              <heading>Published</heading>
             </td>
           </tr>
         </tbody></table>
